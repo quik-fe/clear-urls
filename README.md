@@ -20,15 +20,10 @@ npm i @quik-fe/clear-urls
 
 ```ts
 import { clearUrl } from "@quik-fe/clear-urls";
-
-const urls = [
-  "https://www.bilibili.com/video/xxx/?spm_id_from=333.1007.tianma.1-1-1.click",
-];
-
-for (const url of urls) {
-  const cleaned = clearUrl(url);
-  console.log(cleaned);
-}
+const url =
+  "https://www.bilibili.com/video/xxx/?spm_id_from=333.1007.tianma.1-1-1.click";
+const cleaned = clearUrl(url);
+console.log(cleaned);
 ```
 
 output:
@@ -41,6 +36,20 @@ output:
   "cancel": false,
   "providers": ["globalRules", "bilibili.com"]
 }
+```
+
+## esm
+
+```html
+<div id="root"></div>
+<script type="module">
+  import { clearUrl } from "https://esm.run/@quik-fe/clear-urls@latest";
+  const url =
+    "https://www.bilibili.com/video/xxx/?spm_id_from=333.1007.tianma.1-1-1.click";
+  const cleaned = clearUrl(url);
+  console.log(cleaned);
+  root.innerHTML = `<pre>${JSON.stringify(cleaned, null, 2)}</pre>`;
+</script>
 ```
 
 # build

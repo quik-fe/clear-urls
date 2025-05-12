@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module">
+    import { clearUrl } from "https://esm.run/@quik-fe/clear-urls@latest";
+    const url = "https://www.bilibili.com/video/xxx/?spm_id_from=333.1007.tianma.1-1-1.click";
+    const cleaned = clearUrl(url);
+    console.log(cleaned);
+    root.innerHTML = `<pre>${JSON.stringify(cleaned, null, 2)}</pre>`;
+  </script>
+</body>
+
+</html>
