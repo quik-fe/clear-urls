@@ -1,6 +1,6 @@
 {
   "name": "@quik-fe/clear-urls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/main.js",
   "module": "dist/main.mjs",
@@ -25,7 +25,13 @@
     "dist",
     "src"
   ],
-  "keywords": [],
+  "keywords": [
+    "clear-urls",
+    "anti-tracking",
+    "security",
+    "privacy",
+    "tracking-protection"
+  ],
   "author": "lenml",
   "license": "AGPL-3.0-only",
   "publishConfig": {
